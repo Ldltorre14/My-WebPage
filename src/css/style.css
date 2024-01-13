@@ -29,6 +29,7 @@ body{
     margin-right: 5px;
 }
 
+
 .header-section{
     position: relative;
     background-color: #0C243C;
@@ -37,7 +38,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
 }
 
 .header-1 {
@@ -45,13 +46,13 @@ body{
     background-color: rgba(65, 78, 92, 0.612);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    margin-right: 10px;
     display: flex;
-    margin-top: 0;
     flex-flow: column;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:center;
     align-items: center;
-    width: 50%; /* Reduce la anchura al 70% del contenedor padre */   
+    width: 40%; /* Reduce la anchura al 70% del contenedor padre */   
 }
 
 .profile-photo {
@@ -60,20 +61,75 @@ body{
     border-radius: 100%;    
 }
 
-.header-title {
-    font-size: 44px; /* Adjust as needed */
+.header-title-1 {
+    font-size: 36px; /* Adjust as needed */
     color: #98FB98;
 }
 .about{
     color: #CCCCCC;
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 17px;
+    font-size: 16px;
     text-align: justify;
+}
+
+.header-2{
+    position: relative;
+    background-color: rgba(65, 78, 92, 0.612);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 50%; 
+}
+
+.icon-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+#github-icon{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 22px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+
+}
+#github-icon:hover{
+    cursor: pointer;
+    scale: 2;
+}
+
+
+#linkedin-icon{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 22px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#linkedin-icon:hover{
+    cursor: pointer;
+    scale: 2;
 }
 
 #skills{
     position:relative;
     height: 622px;
 }
+
 
