@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(255, 255, 255);  
+    font-family: 'Courier New', Courier, monospace; 
+    margin: 0; 
+}
+
+.nav-header {
+    background-color:#081724;
+    display: flex;
+    flex-flow:row;
+    flex-direction: wrap;
+    justify-content: right;
+    position: fixed;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.65);
+    width: 100%; /* Use 100% to take the full width of the viewport */
+    height: 60px;
+    top: 0;
+    z-index: 1;
+}
+
+.nav {
+    color: #6CA6CD;
+    text-decoration: none;
+    font-size: 26px;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.header-section{
+    position: relative;
+    background-color: #0C243C;
+    margin-top: 60px;
+    height: 581px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-1 {
+    position: relative;
+    background-color: rgba(65, 78, 92, 0.612);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    margin-top: 0;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    width: 50%; /* Reduce la anchura al 70% del contenedor padre */   
+}
+
+.profile-photo {
+    width: 170px; 
+    height: 170px;
+    border-radius: 100%;    
+}
+
+.header-title {
+    font-size: 44px; /* Adjust as needed */
+    color: #98FB98;
+}
+.about{
+    color: #CCCCCC;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 17px;
+    text-align: justify;
+}
+
+#skills{
+    position:relative;
+    height: 622px;
+}
+
