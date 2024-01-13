@@ -11,49 +11,60 @@
     <meta property="og:image" content="/Resources/Images/profile-photo.png">
     <meta property="og:image:alt" content="Profile Photo">
 
-    <link rel="canonical" href="https://Leonardo.dev">
     <title>Leonardo Perez</title>
 
-    <style>
-        body{
-            background-color: rgb(192, 192, 223);
-        }
-    </style>
-
+   <link rel="stylesheet" href="/src/css/style.css">
+   <script src="/src/js/main.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Hi I'm Leonardo</h1>
-        <nav>
-            <a href="#technical-skills">Technical Skills</a>
-        </nav>
+        <div class="nav-header">
+            <nav>
+                <a class="nav" href="#skills">Skills</a>
+                <a class="nav" href="#projects">Projects</a>
+                <a class="nav" href="#experience">Experience</a>
+            </nav>
+        </div>
     </header>
-
-
     <main>
-        <p>
-            I am a software engineer who's main focus<br> is
-            the development of amazing AI-based applications and <br>
-            the crafting of great experiences for everyone <br>
-            (Also passionate about creative and unique software)
-        </p>
-        <section id="technical-skills">
+        <section class="header-section">
+            <div class="header-1">
+                <h1 class="header-title-1">Hi I'm Leonardo</h1>
+                <img class="profile-photo" src="Resources/Images/profile-photo.png">
+                <div class="about">
+                    <p>
+                        I am a <strong>Software Engineer</strong> who's main focus is
+                        the development of amazing <strong>AI-based applications</strong>
+                        and the crafting of great experiences for everyone 
+                        (Also passionate about creative and unique software)
+                    </p>
+                </div>
+            </div>
+            <div class="header-2">
+                <h2 class="header-title-2"><strong>More Info</strong></h2>
+                <div class="icon-container">
+                    <img id="github-icon" src="Resources/Images/github-icon.png">   
+                    <img id="linkedin-icon" src="Resources/Images/linkedin-icon.png">  
+                </div>
+            </div>
+        </section>
+        <section id="skills">
             <header>
-                <h2>Technical Skills</h2>
+                <h2 class="skills-header">Skills</h2>
             </header>
-            <div class="programming-language-container">
-                <div class="programming-language">
+            <div class="card-container">
+                <div class="card">
                     <h3>Python</h3>
                     <ul>
-                        <li>Core Python Libraries (Numpy, Pandas, Matplotlib)</li>
+                        <li>Core Python Libraries</li>
                         <li>OpenCV</li>
                         <li>PyTorch</li>
                         <li>Flask</li>
                     </ul>
                 </div>
     
-                <div class="programming-language">
+                <div class="card">
                     <h3>C++</h3>
                     <ul>
                         <li>STL</li>
@@ -62,12 +73,10 @@
                         <li>Multithreading</li>
                     </ul>
                 </div>
-            </div>
-            
-            <aside>
-                <small>
-                    <h2>Additional</h2>
-                    <ul class="Add-List">
+                
+                <div class="card">
+                    <h3>Tools</h3>
+                    <ul class="card">
                         <li>Git</li>
                         <li>Github</li>
                         <li>PostgreSQL</li>
@@ -77,10 +86,19 @@
                         <li>Linux</li>
                         <li>VirtualBox</li>
                     </ul>
-                </small>    
-            </aside>
+                </div>    
+            </div>
         </section>
     </main>
+
+    <footer id="page-footer">
+        <p>
+            <small>
+                2024 Leonardo Perez. All Rights Reserved
+            </small>
+        </p>
+    </footer>
+
 </body>
 
 
