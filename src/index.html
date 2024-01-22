@@ -21,62 +21,61 @@
     <header>
         <div class="nav-header">
             <nav>
-                <a class="nav" href="#skills">Skills</a>
+                <a class="nav" href="#header-section">Home</a>
+                <a class="nav" href="#skills-section">Skills</a>
                 <a class="nav" href="#projects">Projects</a>
                 <a class="nav" href="#experience">Experience</a>
+                <a class="nav" href="#contact">Contact</a>
             </nav>
         </div>
     </header>
     <main>
-        <section class="header-section">
-            <div class="header-1">
-                <h1 class="header-title-1">Hi I'm Leonardo</h1>
+        <section id="header-section">
+            <div class="header">
+                <h1 class="header-title">Hi, I'm Leonardo</h1>
                 <img class="profile-photo" src="Resources/Images/profile-photo.png">
                 <div class="about">
                     <p>
                         I am a <strong>Software Engineer</strong> who's main focus is
                         the development of amazing <strong>AI-based applications</strong>
                         and the crafting of great experiences for everyone 
-                        (Also passionate about creative and unique software)
                     </p>
                 </div>
-            </div>
-            <div class="header-2">
-                <h2 class="header-title-2"><strong>More Info</strong></h2>
                 <div class="icon-container">
                     <img id="github-icon" src="Resources/Images/github-icon.png">   
                     <img id="linkedin-icon" src="Resources/Images/linkedin-icon.png">  
                 </div>
             </div>
         </section>
-        <section id="skills">
+
+        <section id="skills-section">
             <header>
                 <h2 class="skills-header">Skills</h2>
             </header>
             <div class="card-container">
-                <div class="card">
-                    <h3>Python</h3>
+                <article class="card">
+                    <h3 class="card-header">Python</h3>
                     <ul>
                         <li>Core Python Libraries</li>
                         <li>OpenCV</li>
                         <li>PyTorch</li>
                         <li>Flask</li>
                     </ul>
-                </div>
+                </article>
     
-                <div class="card">
-                    <h3>C++</h3>
+                <article class="card">
+                    <h3 class="card-header">C++</h3>
                     <ul>
                         <li>STL</li>
                         <li>SFML (Game Development)</li>
                         <li>TCP/IP Socket Programming</li>
                         <li>Multithreading</li>
                     </ul>
-                </div>
+                </article>
                 
-                <div class="card">
-                    <h3>Tools</h3>
-                    <ul class="card">
+                <article class="card">
+                    <h3 class="card-header">Tools</h3>
+                    <ul>
                         <li>Git</li>
                         <li>Github</li>
                         <li>PostgreSQL</li>
@@ -86,7 +85,7 @@
                         <li>Linux</li>
                         <li>VirtualBox</li>
                     </ul>
-                </div>    
+                </article>    
             </div>
         </section>
     </main>
