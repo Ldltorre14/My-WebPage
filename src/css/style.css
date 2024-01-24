@@ -11,6 +11,40 @@
     }
 }
 
+
+@keyframes pulse1{
+    from {
+        transform: scale(0);
+        opacity: 10%;
+    }
+    to{
+        transform: scale(5.5);
+        opacity: 30%;
+    }
+}
+
+@keyframes pulse2{
+    from {
+        transform: scale(0);
+        opacity: 10%;
+    }
+    to{
+        transform: scale(5);
+        opacity: 40%
+    }
+}
+
+@keyframes pulse3{
+    from{
+        transform: scale(0);
+        opacity: 10%;
+    }
+    to{
+        transform: scale(4.5);
+        opacity: 50%;
+    }
+}
+
 .nav:hover{
     color:#FFF;
 }
@@ -38,8 +72,6 @@
 }
 
 
-
-
 #github-icon:hover{
     cursor: pointer;
     scale: 2;
@@ -61,6 +93,62 @@ body{
 
 /* ---------------HEADER SECTION---------------- */
 
+.header-background-1 {
+    position: absolute;
+    height: 120px; /* Adjust the height as needed */
+    width: 120px; /* Adjust the width as needed */
+    margin-top: 20px;
+    border-radius: 50%;
+    justify-self: center;
+    z-index: -2;
+    background-color: #d8f9ff;
+    overflow: hidden;
+    
+
+    animation-name: pulse1;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.header-background-2 {
+    position: absolute;
+    height: 120px; /* Adjust the height as needed */
+    width: 120px; /* Adjust the width as needed */
+    margin-top: 20px;
+    border-radius: 50%;
+    justify-self: center;
+    z-index: -1;
+    background-color: #8aecff;
+    overflow: hidden;
+    
+
+    animation-name: pulse2;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.header-background-3 {
+    position: absolute;
+    height: 120px; /* Adjust the height as needed */
+    width: 120px; /* Adjust the width as needed */
+    margin-top: 20px;
+    border-radius: 50%;
+    justify-self: center;
+    z-index: 0;
+    background-color: #3CDfff;
+    overflow: hidden;
+    
+
+    animation-name: pulse3;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
 .nav-header {
     background-color:#FFFFFF;
     display: flex;
@@ -79,6 +167,14 @@ body{
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: backwards;
+}
+
+.menu-icon{
+    width: 20px;
+    height: 20px;
+    justify-self: end;
+    margin-right: 10px;
+    display: none;
 }
 
 .nav {
@@ -101,9 +197,11 @@ body{
     height: 700px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-content: center;
+    align-items: center;
     justify-content:center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgb(178, 168, 168);
 }
 
 .header {
@@ -118,7 +216,8 @@ body{
     flex-wrap: wrap;
     justify-content:center;
     align-items: center;
-    max-width: 40%;
+    max-width: 50%;
+    max-height: 80%;
     
     animation-name: fade-in;
     animation-duration: 2s;
@@ -190,19 +289,21 @@ body{
     font-size: 40px;
 }
 
-.card-container{
+.skills-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-.card{
+.skill-card{
     justify-content: center;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
     width: 200px;
@@ -212,7 +313,7 @@ body{
     background-color: rgba(247,249,249,1.00);
 }
 
-.card-header{
+.skill-card-header{
     justify-content: center;
 }
 
@@ -221,8 +322,11 @@ body{
 
 /* ----------------MEDIA QUERIES----------------- */
 @media (max-width: 768px){
+    .menu-icon{
+        display: inline;
+    }
     .nav{
-        font-size: 16px;
+        display: none;
     }
     .header-title{
         font-size: 30px;
@@ -241,14 +345,30 @@ body{
     .nav-header{
         height: 45;
     }
-    .nav{
-        font-size: 12px;
+    .header-background-1{
+        width: 90px;
+        height: 90px;
+        margin-left: 3px;
+    }
+    .header-background-2{
+        width: 90px;
+        height: 90px;
+        margin-left: 3px;
+    }
+    .header-background-3{
+        width: 90px;
+        height: 90px;
+        margin-left: 3px;
+    }
+    .header{
+        margin-left: 20px;
+        max-width: 60%;
     }
     .header-title{
         font-size: 20px;
     }
     .about{
-        font-size: 12px;
+        font-size: 14px;
     }
     .profile-photo{
         width: 130px;
@@ -259,14 +379,23 @@ body{
     .nav-header{
         height: 40px;
     }
-    .nav{
-        font-size: 10px;
+    .header-background-1{
+        width: 70px;
+        height: 70px;
+    }
+    .header-background-2{
+        width: 70px;
+        height: 70px;
+    }
+    .header-background-3{
+        width: 70px;
+        height: 70px;
     }
     .header-title{
         font-size: 18px;
     }
     .about{
-        font-size: 10px;
+        font-size: 12px;
     }
     .profile-photo{
         width: 120px;
@@ -278,17 +407,30 @@ body{
     .nav-header{
         height: 35;
     }
-    .nav{
-        font-size: 7px;
+    .header-background-1{
+        width: 60px;
+        height: 60px;
+    }
+    .header-background-2{
+        width: 60px;
+        height: 60px;
+    }
+    .header-background-3{
+        width: 60px;
+        height: 60px;
+    }
+    .header{
+        max-height: 70%;
     }
     .header-title{
         font-size: 16px;
     }
     .about{
-        font-size: 10px;
+        font-size: 12px;
     }
     .profile-photo{
         width: 100px;
         height: 100px;
     }
+
 }
