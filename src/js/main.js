@@ -1,3 +1,5 @@
+
+// Redirect to Github/Linkedin
 document.addEventListener("DOMContentLoaded", function(){
     var element = document.getElementById("github-icon")
     element.addEventListener("click", function(){
@@ -12,3 +14,33 @@ document.addEventListener("DOMContentLoaded", function(){
         "_blank")
     })
 })
+
+
+//Show Menu
+document.addEventListener("DOMContentLoaded", function(){
+    var menuButton = document.querySelector(".menu-icon")
+    var navHeader = document.querySelector(".nav-header")
+    var nav = document.querySelector(".nav")
+    
+
+    menuButton.addEventListener("click", function(){
+        navHeader.style.setProperty('width','45%')
+        navHeader.style.setProperty('height','60%')
+    })
+})
+
+//Hide Menu
+document.addEventListener("DOMContentLoaded",function(){
+    var menuButton = document.querySelector(".menu-icon")
+    var navHeader = document.querySelector(".nav-header")
+    var nav = document.querySelector(".nav")
+
+    menuButton.addEventListener("click", function(){
+        
+    })
+})
+
+
+
+
+
