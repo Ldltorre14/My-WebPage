@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(){
         window.open("https://github.com/Ldltorre14","_blank")
     })
 })
-
+ 
 document.addEventListener("DOMContentLoaded", function(){
     var element = document.getElementById("linkedin-icon")
     element.addEventListener("click", function(){
